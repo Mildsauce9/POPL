@@ -35,9 +35,8 @@ public:
     }
     void getData(string filename)
     {
-        int n = findSize(filename);  // Finds the number of records in the file.
-                                               // Creates a vector of objects Employees;
-        string text;                           // Stores the value of each record;
+        int n = findSize(filename);             // Finds the number of records in the file.
+        string text;                           // Temp variable
         ifstream ReadFile("Employee_inp.txt"); // Reads the whole file;
         char split = ',';                      // The tokenizer that will be used to differentiate the different fields in the record;
         string out;                            // The value that will be stored for every value in a record;
